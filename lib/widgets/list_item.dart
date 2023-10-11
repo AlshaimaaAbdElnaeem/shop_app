@@ -14,6 +14,7 @@ class ListItems extends StatelessWidget {
   Widget build(BuildContext context) {
  var item = context.read<CatalogModel>().getById(index);
     return Container(
+      margin: const EdgeInsets.only(bottom: 14),
       height: 70,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),

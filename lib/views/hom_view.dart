@@ -10,7 +10,6 @@ class HomeView extends StatelessWidget {
   static String id = 'HomeView';
   @override
   Widget build(BuildContext context) {
-    var number = Provider.of<CatalogModel>(context).itemsNames.length;
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -23,7 +22,6 @@ class HomeView extends StatelessWidget {
           SliverList(
               delegate: SliverChildBuilderDelegate(
             (context, index) => ListItems(index),
-            childCount: 10,
           ))
         ],
       ),
